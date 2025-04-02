@@ -161,3 +161,92 @@ body {
   color: white;
   font-size: 24px;
 }
+
+/* Navbar adjustments for smaller screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+
+  .search-container {
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .search-container input {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .overlay {
+    max-width: 80%;
+    left: 5%;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  #recommendations {
+    position: static;
+    transform: none;
+    max-width: 100%;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .place-card {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .social-icons {
+    position: static;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .social-icons i {
+    font-size: 20px;
+    margin: 0 10px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
